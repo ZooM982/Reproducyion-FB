@@ -1,12 +1,25 @@
-const Home = () =>{
+import { onAuthStateChanged, signOut } from "firebase/auth";
+import React, { useEffect, useState } from "react";
+import { auth } from "../firebase";
+import { useNavigate } from "react-router-dom";
+
+
+
+
+const Home = () => {
+    const history = useNavigate()
+
+    const handleClick = () =>{
+        signOut(auth).then(val=>{
+            console.log(val,"val")
+            history('/')
+        })
+    }
     return(
-        <section>
-            <div className="container">
-                <div className="row">
-                    <h1>Hello</h1>
-                </div>
-            </div>
-        </section>
+        <div>
+            <h1>Home</h1>
+            <button onClick={handleClick}>SignOut</button>
+        </div>
     )
 }
 

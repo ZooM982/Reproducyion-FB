@@ -39,9 +39,14 @@
 .btcc{
   background-color: #42b72a;
   width: 250px;
+  color: #FFF;
 }
 
 .modal-p{
   font-size: 12px;
   text-align: start;
+}
+
+label, select{
+  height: 30px;
 }
