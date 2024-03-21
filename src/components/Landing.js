@@ -5,6 +5,7 @@ import { auth } from "../firebase";
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from "react-router-dom";
+import Footer from "./Footer";
 
 
 
@@ -107,6 +108,7 @@ const Landing = () => {
                             <hr />
                             <button type="button" className="btn btcc my-3" onClick={handleShow}>Créer nouveau compte</button>
                         </form>
+                        <p className="py-4 mx-4 text-center fs-9"> <b>Créer une Page</b> pour une célébrité, une marque ou une entreprise.</p>
                     </div>
                 </div >
             </div >
@@ -202,6 +204,7 @@ const Landing = () => {
                     </form>
                 </Modal.Body>
             </Modal>
+            <Footer />
         </section >
     );
 }

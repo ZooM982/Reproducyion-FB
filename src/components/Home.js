@@ -1,23 +1,21 @@
-import { signOut } from "firebase/auth";
-import { auth } from "../firebase";
-import { useNavigate } from "react-router-dom";
-
-
-
+import Navbar from "./Navbar";
 
 const Home = () => {
-    const history = useNavigate()
+    
+    return (
+        <div className="container-fluid">
+            <div className="row">
+                <div className="header ">
+                    <Navbar />
+                </div>
+                <hr />
+                <div className="body">
+                    <div className=" col-md-3 bg-primary body-left">FFF</div>
+                    <div className=" col-md-6 bg-success body-center">hhh</div>
+                    <div className=" col-md-3 bg-primary body-right">kkk</div>
+                </div>
 
-    const handleClick = () =>{
-        signOut(auth).then(val=>{
-            console.log(val,"val")
-            history('/')
-        })
-    }
-    return(
-        <div>
-            <h1>Home</h1>
-            <button onClick={handleClick}>SignOut</button>
+            </div>
         </div>
     )
 }

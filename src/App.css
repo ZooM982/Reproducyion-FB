@@ -1,7 +1,10 @@
+body{
+  background-color: black;
+}
 /* CONNECTION PAGE */
 .sibg{
-  background-color: #f0f0f0;
-  padding: 150px 80px;
+  background-color: #c4c4c4;
+  padding: 120px 50px;
 }
 
 .left-side{
@@ -49,4 +52,45 @@
 
 label, select{
   height: 30px;
+}
+
+.body{
+  display: flex;
+}
+
+/* NAVBAR */
+.navbar{
+  height: 50px;
+}
+.recherche{
+  height: 40px;
+  padding: 10px;
+  width: 240px;
+  border-radius: 30px;
+  background-color: #555454;
+}
+.recherche input{
+  background-color: inherit;
+  border: none;
+  width: 200px;
+}
+.navbar img{
+  height: 50px;
+  width: 50px;
+}
+
+/* FOOTER */
+.footer{
+  font-size: 13px;
+}
+.footer hr{
+  margin: -8px 0 0 -8px;
+}
+.footer-bottom p{
+  margin: -1px;
+  width: auto;
+}
+.footer p:hover{
+  border-bottom: 1px solid gray;
+  cursor: pointer;
 }
